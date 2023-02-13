@@ -20,8 +20,9 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+/* scrollbar styling */
 body::-webkit-scrollbar {
-  width: 11px;
+  width: 20px;
 }
 
 body {
@@ -35,12 +36,6 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
   background-color: var(--main-color);
-  border-radius: 6px;
-  border: 3px solid var(--scrollbarBG);
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -o-border-radius: 6px;
 }
 
 html {
