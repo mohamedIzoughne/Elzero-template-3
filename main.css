@@ -397,15 +397,15 @@ header .nav .mega-menu {
   content: '';
   position: absolute;
   background-color: white;
-  width: 79vw;
-  height: 322px;
-  transform: skew(98deg);
-  -webkit-transform: skew(98deg);
-  -moz-transform: skew(98deg);
-  -ms-transform: skew(98deg);
-  -o-transform: skew(98deg);
-  bottom: -157px;
-  right: -4px;
+  width: 100%;
+  height: 100%;
+  transform: skewY(-6deg);
+  -webkit-transform: skewY(-6deg);
+  -moz-transform: skewY(-6deg);
+  -ms-transform: skewY(-6deg);
+  -o-transform: skewY(-6deg);
+  bottom: -74%;
+  left: 0;
 }
 
 .landing .container {
@@ -441,6 +441,7 @@ header .nav .mega-menu {
 
 .landing .intro {
   line-height: 1.6;
+  z-index: 5;
 }
 
 .landing .intro h3 {
@@ -456,6 +457,10 @@ header .nav .mega-menu {
 
 @media (max-width: 991px) {
   .landing .landing-image {
+    display: none;
+  }
+
+  .landing::before {
     display: none;
   }
 
